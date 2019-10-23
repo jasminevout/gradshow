@@ -1,0 +1,242 @@
+@charset "utf-8";
+
+// 1. Import the initial variables
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+// 2. Set your own initial variables
+$black: #171F27;
+$yellow: #FFA81D;
+$turquoise: #169884;
+$blue: #00327D;
+$red: #CC004A;
+
+$family-sans-serif: "Montserrat", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+// 3. Set the derived variables
+$primary: $yellow;
+$info: $turquoise;
+$dark: $black;
+$text: $black;
+
+$link: $primary;
+$link-hover: darken($primary, 15%);
+$link-visited: $primary;
+
+// 4. Import the rest of Bulma
+@import "../node_modules/bulma/bulma";
+
+// 5. Custom styles
+// #Anchors
+a {
+  transition: 0.3s;
+}
+
+// #Layout
+.section {
+  &-projects {
+    padding-top: 75px;
+
+    @media screen and (min-width: 1408px) {
+      padding-top: 100px;
+    }
+  }
+}
+
+.footer {
+  padding-bottom: 3rem;
+}
+
+// #Banner (Mobile)
+.parallax-container-mob {
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.parallax-bg-mob {
+  background-color: $yellow;
+  background-image: url("../img/parallax/banner-mob_bg.svg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+  @media screen and (min-width: 1024px) {
+    background: none;
+  }
+}
+
+.parallax-toplayer {
+  position: relative;
+  bottom: -50px;
+
+  .parallax-bracket {
+    position: absolute;
+    left: -50px;
+    bottom: -25px;
+    display: inline-block;
+    width: 200px;
+
+    @media screen and (min-width: 769px) {
+      width: 250px;
+      bottom: -50px;
+    }
+
+    @media screen and (min-width: 1216px) {
+      width: 300px;
+      bottom: -40px;
+    }
+
+    @media screen and (min-width: 1408px) {
+      width: 350px;
+      bottom: -50px;
+    }
+  }
+
+  .parallax-anglebracket {
+    position: absolute;
+    right: 1rem;
+    bottom: 0;
+    display: inline-block;
+    width: 100px;
+
+    @media screen and (min-width: 769px) {
+      width: 150px;
+      bottom: -25px;
+    }
+
+    @media screen and (min-width: 1216px) {
+      width: 200px;
+      bottom: -50px;
+    }
+  }
+}
+
+// #Banner (Desktop)
+.parallax-container-desk {
+  display: none;
+
+  @media screen and (min-width: 1024px) {
+    display: block;
+    position: fixed;
+    overflow: visible;
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+.parallax-layer {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+.layer {
+  // Square Bracket
+  &-0 {
+      z-index: 0;
+      top: 25px;
+      background: url(../img/parallax/parallax-squarebrackets.svg);
+      background-repeat: no-repeat;
+      background-position: top right;
+      background-size: 25vw;
+
+      @media screen and (min-width: 1216px) {
+        background-size: 20vw;
+      }
+  }
+  // Logo
+  &-1 {
+      z-index: 1;
+      margin-left: 1rem;
+      background: url(../img/parallax/parallax-logo.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 75vw;
+
+      @media screen and (min-width: 1216px) {
+        margin-left: 2rem;
+        background-size: 60vw;
+      }
+
+      @media screen and (min-width: 1408px) {
+        background-size: 50vw;
+      }
+  }
+  // Tilde
+  &-2 {
+      z-index: 2;
+      top: 250px;
+      margin-left: 100px;
+      background: url(../img/parallax/parallax-tilde.svg);
+      background-repeat: no-repeat;
+      background-position: center right;
+      background-size: 25vw;
+
+      @media screen and (min-width: 1216px) {
+        top: 200px;
+        background-size: 20vw;
+      }
+
+      @media screen and (min-width: 1408px) {
+        top: 150px;
+        margin-left: 50px;
+      }
+  }
+  // Arrow
+  &-3 {
+      z-index: 4;
+      top: -50px;
+      background: url(../img/parallax/parallax-arrow.svg);
+      background-repeat: no-repeat;
+      background-position: top left;
+      background-size: 20vw;
+
+      @media screen and (min-width: 1408px) {
+        background-size: 17vw;
+      }
+  }
+  // Dash
+  &-4 {
+      z-index: 5;
+      top: -25px;
+      background: url(../img/parallax/parallax-dash.svg);
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: 15vw;
+
+      @media screen and (min-width: 1408px) {
+        background-size: 12vw;
+      }
+  }
+  // Semicolon
+  &-5 {
+      z-index: 6;
+      top: 100px;
+      background: url(../img/parallax/parallax-semicolon.svg);
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      background-size: 15vw;
+
+      @media screen and (min-width: 1216px) {
+        background-size: 12vw;
+      }
+
+      @media screen and (min-width: 1408px) {
+        background-size: 10vw;
+      }
+  }
+}
+
+// #Grad Avatars
+.avatars-container {
+  text-align: center;
+
+  figure {
+    padding: 1rem;
+  }
+}
