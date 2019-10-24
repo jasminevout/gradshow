@@ -6959,6 +6959,9 @@ label.panel-block {
 a {
   transition: 0.3s; }
 
+.is-border-black {
+  border: 4px solid #171F27; }
+
 .section-projects {
   padding-top: 75px; }
   @media screen and (min-width: 1408px) {
@@ -7074,11 +7077,11 @@ a {
   background-size: 25vw; }
   @media screen and (min-width: 1216px) {
     .layer-2 {
-      top: 200px;
+      top: 450px;
       background-size: 20vw; } }
   @media screen and (min-width: 1408px) {
     .layer-2 {
-      top: 150px;
+      top: 400px;
       margin-left: 50px; } }
 
 .layer-3 {
@@ -7116,6 +7119,23 @@ a {
   @media screen and (min-width: 1408px) {
     .layer-5 {
       background-size: 10vw; } }
+
+.layer-2 {
+  z-index: 2;
+  top: 250px;
+  background: url(../img/parallax/parallax-anglebrackets.svg);
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: 25vw;
+  transform: rotate(45deg); }
+  @media screen and (min-width: 1216px) {
+    .layer-2 {
+      top: 450px;
+      background-size: 20vw; } }
+  @media screen and (min-width: 1408px) {
+    .layer-2 {
+      top: 400px;
+      margin-left: 50px; } }
 
 .avatars-container {
   text-align: center; }
