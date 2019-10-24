@@ -193,7 +193,7 @@ a {
   // Arrow
   &-3 {
       z-index: 4;
-      top: -50px;
+      top: -60px;
       background: url(../img/parallax/parallax-arrow.svg);
       background-repeat: no-repeat;
       background-position: top left;
@@ -206,7 +206,7 @@ a {
   // Dash
   &-4 {
       z-index: 5;
-      top: -25px;
+      top: -35px;
       background: url(../img/parallax/parallax-dash.svg);
       background-repeat: no-repeat;
       background-position: top center;
@@ -235,7 +235,7 @@ a {
   }
   // Angle Bracket
   &-6 {
-      z-index: 2;
+      z-index: 7;
       top: 450px;
       margin-left: 50px;
       background: url(../img/parallax/parallax-anglebrackets.svg);
@@ -246,6 +246,17 @@ a {
       @media screen and (min-width: 1216px) {
         background-size: 18vw;
       }
+  } 
+  // Bracket
+  &-7 {
+      z-index: 0;
+      top: 800px;
+      left: -300px;
+      background: url(../img/parallax/parallax-brackets.svg);
+      background-repeat: no-repeat;
+      background-position: bottom right;
+      background-size: 25vw;
+
   }  
 }
 
@@ -255,5 +266,31 @@ a {
 
   figure {
     padding: 1rem;
+  }
+}
+
+// #Supporters
+.section-support {
+  margin-top: 75px;
+  padding-top: 100px;
+
+  @media screen and (min-width: 769px) {
+    padding-top: 3rem;
+  }
+}
+
+.ampersand {
+  position: absolute;
+  top: -200px;
+  left: -50px;
+  width: 150px;
+
+  @media screen and (min-width: 769px) {
+    width: 175px;
+  }
+
+  @media screen and (min-width: 1216px) {
+    width: 200px;
+    left: 0;
   }
 }
