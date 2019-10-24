@@ -7069,7 +7069,7 @@ a {
 
 .layer-2 {
   z-index: 2;
-  top: 250px;
+  top: 450px;
   margin-left: 100px;
   background: url(../img/parallax/parallax-tilde.svg);
   background-repeat: no-repeat;
@@ -7077,7 +7077,6 @@ a {
   background-size: 25vw; }
   @media screen and (min-width: 1216px) {
     .layer-2 {
-      top: 450px;
       background-size: 20vw; } }
   @media screen and (min-width: 1408px) {
     .layer-2 {
@@ -7120,22 +7119,17 @@ a {
     .layer-5 {
       background-size: 10vw; } }
 
-.layer-2 {
+.layer-6 {
   z-index: 2;
-  top: 250px;
+  top: 450px;
+  margin-left: 50px;
   background: url(../img/parallax/parallax-anglebrackets.svg);
   background-repeat: no-repeat;
   background-position: center left;
-  background-size: 25vw;
-  transform: rotate(45deg); }
+  background-size: 20vw; }
   @media screen and (min-width: 1216px) {
-    .layer-2 {
-      top: 450px;
-      background-size: 20vw; } }
-  @media screen and (min-width: 1408px) {
-    .layer-2 {
-      top: 400px;
-      margin-left: 50px; } }
+    .layer-6 {
+      background-size: 18vw; } }
 
 .avatars-container {
   text-align: center; }
