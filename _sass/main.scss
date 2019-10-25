@@ -26,9 +26,16 @@ $link-visited: $primary;
 @import "../node_modules/bulma/bulma";
 
 // 5. Custom styles
-// #Anchors
 a {
   transition: 0.3s;
+  &::selection {
+    color: $white;
+    background: rgba($color: $turquoise, $alpha: 0.7);
+  }
+}
+
+::selection {
+  background: rgba($color: $yellow, $alpha: 0.7);
 }
 
 .is-border-black {

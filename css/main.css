@@ -6958,6 +6958,12 @@ label.panel-block {
 
 a {
   transition: 0.3s; }
+  a::selection {
+    color: white;
+    background: rgba(22, 152, 132, 0.7); }
+
+::selection {
+  background: rgba(255, 168, 29, 0.7); }
 
 .is-border-black {
   border: 4px solid #171F27; }
